@@ -1,7 +1,7 @@
 package com.module.timetable.RegisterCourse;
 import java.util.List;
-public class Services {
-    List<course> getAllCourse();
+public class CourseServices {
+    List<Course> getAllCourse();
     Course saveCourse(Course course);
     Course getCourseById(Long id);
     Course updateCourse(Course course);

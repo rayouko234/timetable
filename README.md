@@ -1,1 +1,6 @@
-# timetable
+## timetable module
+
+# DEPENDENCIES
+JPA
+Postgresql
+

@@ -1,11 +1,10 @@
 package com.module.timetable.RegisterCourse;
+import java.io.Serializable;
+import javax.persistence.*;
 
-import javax.persistence.RegisterCourse;
-
-
-@RegisterCourse
+@Entity
 @Table(name = "course ")
-public class course {
+public class Course implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -19,10 +18,10 @@ public class course {
     @Column(name = "course_code")
     private String courseCode;
 
-    public course(){
+    public Course(){
 
     }
-    public course(String certification, String courseName, String courseCode){
+    public Course(String certification, String courseName, String courseCode){
         super();
         this.certification = certification;
         this.courseCode = courseCode;

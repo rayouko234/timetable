@@ -1,4 +1,6 @@
 package com.module.timetable.RegisterCourse;
 
-public class courseRepo {
+@Repository
+public interface courseRepo extends JpaRepository<course, Long> {
+
 }
